@@ -1,6 +1,6 @@
 # FIAS + Swift AppDelegate
 
-Updated for the FileMaker 19 iOS App SDK 🎉
+Updated for the FileMaker 19 iOS App SDK
 
 In this walkthrough, you'll learn how to create and use a Swift AppDelegate in a FIAS project. Includes an example of how to fire a FileMaker script using `FMX_Queue_Script` from `applicationDidBecomeActive()`.
 
