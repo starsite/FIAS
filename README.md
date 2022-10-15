@@ -2,9 +2,9 @@
 
 Updated for the FileMaker 19 iOS App SDK
 
-In this walkthrough, you'll learn how to create and use a Swift AppDelegate in a FIAS project. Includes an example of how to fire a FileMaker script using `FMX_Queue_Script` from `applicationDidBecomeActive()`.
+In this walkthrough, you'll learn how to create and use a Swift AppDelegate in a FIAS project. Includes an example of how to fire a FileMaker script using `FMX_Queue_Script` from `applicationDidBecomeActive()`. The documentation on the Claris website for this is incorrect.
 
-In older versions of Xcode, obtaining the symbolic header name for a Swift AppDelegate required using the command line utility `otool`, which is no longer available (starting with Xcode 10). This walkthrough has been updated for Xcode 11 and uses the `objdump` tool.
+🚨 In older versions of Xcode (and older versions of this walkthrough), obtaining the symbolic header name for a Swift AppDelegate required using the command line utility `otool`, which is no longer available (starting with Xcode 10). This walkthrough has been updated for Xcode 11 and uses the `objdump` tool.
 
 ---
 
@@ -36,7 +36,7 @@ In older versions of Xcode, obtaining the symbolic header name for a Swift AppDe
 * Assign our AppDelegate reference in `configFile.txt`
 * Build and run app
 * Profit!
-* Not plagiarize other developers' work with a blog post (ahem). If this walkthrough is helpful, give it a ⭐️, link back to it, or write your own tutorial. Please and thank you. ❤️
+* Not plagiarize other developers' work with a blog post (ahem). If you find this walkthrough helpful, give it a ⭐️, link back to it, or write your own tutorial. Please and thank you. ❤️
 
 ---
 
@@ -109,7 +109,7 @@ class MyAppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     
-    // return foreground active - doesn't work anymore, proprietary FIAS delegate (not part of UIKit)
+    // return foreground active - doesn't work anymore, proprietary FIAS delegate (ie. not part of UIKit)
     func completedReturnToForegroundActive() {
  
         print("return foreground active! - FIAS")
